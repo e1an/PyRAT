@@ -2,7 +2,7 @@ import socket
 import time
 import random
 
-host = "127.0.0.1"
+host = "10.0.1.39"
 port = 80
 
 def send(msg):
