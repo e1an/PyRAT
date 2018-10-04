@@ -27,8 +27,9 @@ while connected == False:
         s.connect((host, port))
         connected = True
         print("Connected to server - IP: " + host)
-    except socket.error as e:
-        sleepTime = random.randint(20,30)
+    except:
+        print("Trying IP " + str(host) + " and port " + str(port))
+        sleepTime = random.randint(10,15)
         time.sleep(sleepTime)
 getInstructions()
 
